@@ -130,7 +130,6 @@ function ToDoList() {
     const onInput = (event: React.FormEvent<HTMLSelectElement>) => {
         setCategory(event.currentTarget.value as unknown as any);
     };
-    console.log(toDos);
 
     return (
         <div>
