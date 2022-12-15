@@ -3,7 +3,8 @@ import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
-body, div, span, applet, object, iframe,
+
+    body, div, span, applet, object, iframe,
     h1, h2, h3, h4, h5, h6, p, blockquote, pre,
     a, abbr, acronym, address, big, cite, code,
     del, dfn, em, img, ins, kbd, q, s, samp,
@@ -54,6 +55,10 @@ body, div, span, applet, object, iframe,
         box-sizing: border-box;
     }
     body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
         background-color: ${(props) => props.theme.bgColor};
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 300;
